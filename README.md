@@ -1,1 +1,1 @@
-# mongo-spring-graphql-service
+# mongo-product-query-service
