@@ -32,6 +32,7 @@ mutation {
 
 With Postman:
 Endpoint: http://localhost:8082/graphql
+
 Request type: POST
 Content-Type : `application/json` 
 Product Query:
