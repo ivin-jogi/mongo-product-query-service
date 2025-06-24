@@ -1,10 +1,14 @@
-type User {
+type Product {
     id: ID!
     name: String!
-    email: String!
-    age: Int!
+    category: String!
+    price: Float!
 }
 
 type Query {
-    users: [User]
+    products: [Product]
+}
+
+type Mutation {
+    addProduct(name: String!, category: String!, price: Float!): Product
 }

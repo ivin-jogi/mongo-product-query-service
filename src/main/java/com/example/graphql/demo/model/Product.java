@@ -1,17 +1,19 @@
 package com.example.graphql.demo.model;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "users")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+@Document(collection = "products")
+public class Product {
     @Id
     private String id;
     private String name;
-    private String email;
-    private int age;
+    private String category;
+    private double price;
 }
